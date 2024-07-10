@@ -123,7 +123,7 @@
                         <name>${dockerImageName}</name>
                     </image>
                     <docker>
-                        <host>//./pipe/dockerDesktopLinuxEngine</host>
+                        <host>tcp://localhost:2375</host>
                     </docker>
                 </configuration>
                 <executions>
@@ -154,15 +154,6 @@
                         <includeOnlyProperty>^git.commit.user.name$</includeOnlyProperty>
                         <includeOnlyProperty>^git.commit.message.full$</includeOnlyProperty>
                     </includeOnlyProperties>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
