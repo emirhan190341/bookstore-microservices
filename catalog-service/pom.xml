@@ -35,7 +35,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -123,7 +122,7 @@
                         <name>${dockerImageName}</name>
                     </image>
                     <docker>
-                        <host>tcp://localhost:2375</host>
+                        <host>//./pipe/dockerDesktopLinuxEngine</host>
                     </docker>
                 </configuration>
                 <executions>
