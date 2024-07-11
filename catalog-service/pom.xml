@@ -121,9 +121,6 @@
                     <image>
                         <name>${dockerImageName}</name>
                     </image>
-                    <docker>
-                        <host>//./pipe/dockerDesktopLinuxEngine</host>
-                    </docker>
                 </configuration>
                 <executions>
                     <execution>
