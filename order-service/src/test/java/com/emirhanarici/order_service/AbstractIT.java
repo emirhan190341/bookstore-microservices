@@ -63,12 +63,12 @@ public abstract class AbstractIT {
                         .withStatus(200)
                         .withBody(
                                 """
-                                            {
-                                                "code": "%s",
-                                                "name": "%s",
-                                                "price": %f
-                                            }
-                                        """
+                    {
+                        "code": "%s",
+                        "name": "%s",
+                        "price": %f
+                    }
+                """
                                         .formatted(code, name, price.doubleValue()))));
     }
 }
