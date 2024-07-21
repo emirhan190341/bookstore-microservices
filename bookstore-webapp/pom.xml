@@ -112,16 +112,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>${dockerImageName}</name>
+					</image>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
-							<goal>build-image</goal>
+							<goal>build-info</goal>
 						</goals>
-						<configuration>
-							<docker>
-								<host>//./pipe/dockerDesktopLinuxEngine</host>
-							</docker>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
