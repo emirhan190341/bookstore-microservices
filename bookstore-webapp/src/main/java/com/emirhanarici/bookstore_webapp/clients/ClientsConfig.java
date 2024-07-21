@@ -16,6 +16,7 @@ import java.time.Duration;
 
 @Configuration
 class ClientsConfig {
+
     private final ApplicationProperties properties;
 
     ClientsConfig(ApplicationProperties properties) {
