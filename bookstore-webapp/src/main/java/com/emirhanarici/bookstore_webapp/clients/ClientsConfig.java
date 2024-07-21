@@ -46,4 +46,5 @@ class ClientsConfig {
                 .build();
         return factory.createClient(OrderServiceClient.class);
     }
+
 }
