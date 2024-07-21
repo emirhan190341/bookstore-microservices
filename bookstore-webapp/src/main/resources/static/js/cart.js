@@ -3,17 +3,17 @@ document.addEventListener('alpine:init', () => {
         cart: { items: [], totalAmount: 0 },
         orderForm: {
             customer: {
-                name: "Siva",
-                email: "siva@gmail.com",
+                name: "Emirhan",
+                email: "emirhaan.aricii@gmail.com",
                 phone: "999999999999"
             },
             deliveryAddress: {
-                addressLine1: "KPHB",
-                addressLine2: "Kukatpally",
-                city:"Hyderabad",
-                state: "TS",
+                addressLine1: "Kocaeli",
+                addressLine2: "Kandira",
+                city:"Kocaeli",
+                state: "Kandira",
                 zipCode: "500072",
-                country: "India"
+                country: "Turkey"
             }
         },
 

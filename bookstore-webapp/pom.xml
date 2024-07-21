@@ -52,6 +52,10 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-oauth2-client</artifactId>
 		</dependency>
@@ -70,6 +74,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -103,16 +112,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<image>
-						<name>${dockerImageName}</name>
-					</image>
-				</configuration>
 				<executions>
 					<execution>
 						<goals>
-							<goal>build-info</goal>
+							<goal>build-image</goal>
 						</goals>
+						<configuration>
+							<docker>
+								<host>//./pipe/dockerDesktopLinuxEngine</host>
+							</docker>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
