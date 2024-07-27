@@ -27,5 +27,3 @@
 - **Bootstrap**
 - **Grafana**
 - **Prometheus**
-- **Loki**
-- **Tempo**
